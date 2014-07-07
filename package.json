@@ -11,6 +11,10 @@
   },
   "author": "tgfjt",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tgfjt/node-gglurl.git"
+  },
   "dependencies": {
     "commander": "^2.2.0",
     "googleapis": "^0.8.0"
