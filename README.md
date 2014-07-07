@@ -17,7 +17,7 @@ $ gglurl -d http://goo.gl/bU3VaW
 ## Install
 
 ```
-$ npm install -g gglurl
+$ npm install -g node-gglurl
 ```
 
 ## Licence
