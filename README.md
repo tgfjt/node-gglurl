@@ -1,5 +1,9 @@
 # gglurl
 
+Wrapper Google UrlShortner for cmd & commonJS module.
+
+[![Build Status](https://travis-ci.org/tgfjt/node-gglurl.svg?branch=master)](https://travis-ci.org/tgfjt/node-gglurl)
+
 ## Usage
 
 Encode:
