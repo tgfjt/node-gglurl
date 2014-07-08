@@ -14,6 +14,19 @@ Decode:
 $ gglurl -d http://goo.gl/bU3VaW
 ```
 
+As module:
+```
+var gglurl= require('node-gglurl');
+
+gglurl.decode(function(err, res) {
+	if (err) {
+		console.log(err);
+	} else {
+		console.log(res);
+	}
+}, '<url>');
+```
+
 ## Install
 
 ```

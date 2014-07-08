@@ -4,7 +4,8 @@
   "description": "",
   "main": "gglurl.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests/*.js",
+    "pretest": "./node_modules/.bin/jshint gglurl.js bin/cmd.js"
   },
   "bin": {
     "gglurl": "bin/cmd.js"
@@ -18,5 +19,9 @@
   "dependencies": {
     "commander": "^2.2.0",
     "googleapis": "^0.8.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.2",
+    "tape": "^2.13.3"
   }
 }

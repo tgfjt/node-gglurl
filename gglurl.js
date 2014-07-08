@@ -1,14 +1,16 @@
-/* jshint node:true, strict:false*/
-
 var googleapis = require('googleapis');
 
 var encode = function(client, longUrl, cb) {
+  'use strict';
+
   client.urlshortener.url
     .insert({longUrl: longUrl})
     .execute(cb);
 };
 
 var decode = function(client, shortUrl, cb) {
+  'use strict';
+
   client.urlshortener.url
     .get({shortUrl: shortUrl})
     .execute(cb);
@@ -16,6 +18,8 @@ var decode = function(client, shortUrl, cb) {
 
 var gglurl = {
   encode: function(callback) {
+    'use strict';
+
     var uriArray = Array.prototype.slice.call(arguments, 1);
 
     googleapis
@@ -29,6 +33,8 @@ var gglurl = {
   },
 
   decode: function(callback) {
+    'use strict';
+
     var uriArray = Array.prototype.slice.call(arguments, 1);
 
     googleapis

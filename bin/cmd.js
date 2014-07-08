@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var program = require('commander');
 
 var gglurl = require('../gglurl.js');
@@ -14,6 +12,8 @@ console.log('google shorturl parse:');
 
 if (program.decode) {
   gglurl.decode(function(err, result) {
+    'use strict';
+
     if (err) {
       return console.log('decode error:', err);
     } else {
@@ -24,6 +24,8 @@ if (program.decode) {
 
 if (program.encode) {
   gglurl.encode(function(err, result) {
+    'use strict';
+
     if (err) {
       return console.log('encode error:', err);
     } else {
