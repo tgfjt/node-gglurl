@@ -5,7 +5,7 @@
   "main": "gglurl.js",
   "scripts": {
     "test": "node tests/*.js",
-    "pretest": "./node_modules/.bin/jshint gglurl.js bin/cmd.js"
+    "pretest": "./node_modules/.bin/jshint gglurl.js bin/ tests/"
   },
   "bin": {
     "gglurl": "bin/cmd.js"

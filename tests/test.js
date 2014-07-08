@@ -1,14 +1,8 @@
+/* jshint strict:false*/
+
 var test = require('tape');
 
 var gglurl = require('../gglurl');
-
-var logit = function(err, res) {
-  if (err) {
-    return console.log(err);
-  } else {
-    return console.log(res);
-  }
-};
 
 test('gglurl test', function (t) {
   t.plan(4);
@@ -21,11 +15,11 @@ test('gglurl test', function (t) {
     t.equal(res.longUrl, 'http://www.tagpanda.co.jp/');
   }, 'http://goo.gl/rgk0B');
 
-  gglurl.encode(function(err) {
+  gglurl.encode(function() {
     t.error();
-  }, 'http://www.tagpanda.co.jp\!');
+  }, 'http://www.tagpanda.co.jp!');
 
-  gglurl.decode(function(err) {
+  gglurl.decode(function() {
     t.error();
   }, 'http://goo.gl/rgk0BBBBBBBBBBBBBBBBBB');
 });
