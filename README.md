@@ -3,6 +3,7 @@
 Wrapper Google UrlShortner for cmd & commonJS module.
 
 [![Build Status](https://travis-ci.org/tgfjt/node-gglurl.svg?branch=master)](https://travis-ci.org/tgfjt/node-gglurl)
+[![NPM version](https://badge.fury.io/js/node-gglurl.svg)](http://badge.fury.io/js/node-gglurl)
 
 ## Usage
 
@@ -21,7 +22,7 @@ $ gglurl -d http://goo.gl/bU3VaW
 As module:
 
 ```javascript
-var gglurl= require('node-gglurl');
+var gglurl = require('node-gglurl');
 
 gglurl.decode(function(err, res) {
 	if (err) {
